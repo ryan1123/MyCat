@@ -1,0 +1,52 @@
+html {
+    font-size: 10px;
+    font-family: 'Indie Flower', cursive;
+    background-color: rgba(255, 94, 94, 0.18);
+    width: 800px;
+    margin: 0 auto;
+    padding: 0 20px 20px 20px;
+    border: 5px solid black;
+}
+
+h1 {
+    margin: 0;
+    padding: 20px 0;
+    color: cornflowerblue;
+    text-shadow: 3px 3px 1px black;
+    font-size: 60px;
+    text-align: center;
+
+}
+
+p, li {
+    font-size: 30px;
+    line-heigth: 2;
+    letter-spacing: 1px;
+}
+
+a {
+    font-size: 35px;
+}
+
+a:hover {
+    color: #ff5c43;
+    font-size: 45px;
+}
+
+li {
+    text-align: center;
+}
+
+img {
+    display: block;
+    margin: 0 auto
+}
+
+.selector {
+    font-family: 'ZCOOL KuaiLe', cursive;
+    text-align: center;
+}
+
+strong {
+    font-size: 60px;
+}
