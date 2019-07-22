@@ -1,4 +1,4 @@
-let myImage = document.querySelector("img");
+let myImage = document.getElementById("mycat");
 myImage.onclick = change;
 
 function change() {
@@ -30,3 +30,15 @@ if (!storedName) {
 }
 let myButton = document.querySelector("button");
 myButton.onclick = setUserName;
+
+let mycutecat = document.getElementById("getcutecat");
+mycutecat.onclick = cuteCat;
+
+function cuteCat() {
+    let display = document.getElementById("cuteCat");
+    if (display.style.visibility === "visible") {
+        display.style.visibility = "hidden";
+    } else {
+        display.style.visibility = "visible";
+    }
+}
