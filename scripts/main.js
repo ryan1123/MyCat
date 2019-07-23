@@ -46,6 +46,6 @@ function cuteCat() {
 }
 
 function show() {
-    document.getElementById("time").innerHTML = new Date().toLocaleString();
+    document.getElementById("time").innerHTML = new Date().toLocaleString()+"&nbsp;";
     setTimeout("show()", 1000);
 }
