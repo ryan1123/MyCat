@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <meta http-equiv="Content-Type" content="text/html" charset="UTF-8">
+    <title>Social</title>
     <link href="styles/style.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Indie+Flower&display=swap" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=ZCOOL+KuaiLe&display=swap" rel="stylesheet">
-    <meta charset="UTF-8">
-    <title>Social</title>
+    <link rel="shortcut icon" href="images/catIcon2.png" type="image/x-icon">
+    <script src="scripts/main.js" async></script>
 </head>
-<body>
+<body onload="show()">
 <ul>
     <li><a href="index.html">Home</a></li>
     <li><a href="pictures.html">Pictures</a></li>
@@ -16,15 +18,28 @@
 <h1>Social</h1>
 <div>
     <dl>
-        <dt>日常</dt>
-            <dd>平时猫咪的主要活动场所在它的院子里.没错,是它的院子.不是我的.</dd>
-        <dt>公司</dt>
-            <dd>这个家就是猫咪的公司,我是它的打工仔.</dd>
-        <dt>私人</dt>
-            <dd>它的私人地盘是公司里的一个纸箱子,它在里面时,请勿打扰.</dd>
+        <dt>日常<sup>🐱</sup></dt>
+        <dd>平时猫咪的主要活动场所在它的院子里.没错,是它的院子.不是我的.</dd>
+        <dt>公司<sup>🐱</sup></dt>
+        <dd>这个家就是猫咪的公司,我是它的打工仔.</dd>
+        <dt>私人<sup>🐱</sup></dt>
+        <dd>它的私人地盘是公司里的一个纸箱子,它在里面时,请勿打扰.</dd>
     </dl>
-
-    <blockquote></blockquote>
 </div>
+<div class="selector">
+    <p>你好,欢迎来参观我的喵主子~<a href="index.html"><cite>🐱</cite></a>:</p>
+    <blockquote cite="https://www.baidu.com/s?wd=猫">Miaooooooooooooooo~</blockquote>
+    <p>(上面的问候语来自<abbr title="它的名字我不能直接叫,那是一件非常失礼的事情">我的喵主子</abbr>)</p>
+</div>
+<footer>
+    <hr style="color: black">
+    <div style="text-align: right">
+        <address>
+            <p style="font-size: 20px">Page written by <a href="https://github.com/ryan1123?tab=repositories"
+                                                          target="_blank">Ryan</a>.</p>
+        </address>
+        <span id="time"></span>
+    </div>
+</footer>
 </body>
 </html>

@@ -5,13 +5,15 @@ function change() {
     let mySrc = myImage.getAttribute("src");
     if (mySrc === "images/cat.jpg") {
         myImage.setAttribute("src", "images/cat1.jpg");
+        document.getElementById("mycatDescription").innerHTML="它觉得你很棒?"
     } else {
         myImage.setAttribute("src", "images/cat.jpg");
+        document.getElementById("mycatDescription").innerHTML="它明显受到了惊吓.是你太丑了吗?"
     }
 }
 
 function setHeading(name) {
-    let myHeading = document.querySelector("h1");
+    let myHeading = document.querySelector("h2");
     myHeading.textContent = name + " is AWESOME";
 }
 
@@ -41,4 +43,9 @@ function cuteCat() {
     } else {
         display.style.visibility = "visible";
     }
+}
+
+function show() {
+    document.getElementById("time").innerHTML = new Date().toLocaleString();
+    setTimeout("show()", 1000);
 }
