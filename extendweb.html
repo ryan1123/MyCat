@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<style>
+    form {
+        margin: 0 auto;
+        width: 400px;
+        padding: 1em;
+        border: 1px solid #595959;
+        border-radius: 1em;
+    }
+
+    form div + div {
+        margin-top: 1em
+    }
+
+    label {
+        display: inline-block;
+        width: 90px;
+        text-align: right;
+    }
+
+    input, textarea {
+        font: 1em sans-serif;
+        width: 300px;
+        box-sizing: border-box;
+        border: 1px solid rgba(0, 0, 0, 0.49);
+    }
+
+    input:focus, textarea:focus {
+        border-color: #fff80f;
+    }
+
+    textarea {
+        vertical-align: top;
+        height: 5em;
+    }
+
+    .button {
+        padding-left: 90px;
+    }
+
+    button {
+        margin-left: .5em;
+    }
+</style>
+<head>
+    <meta charset="UTF-8">
+    <title>This is a extended web page</title>
+</head>
+<body>
+<form action="index.html" method="post">
+    <div>
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="user_name" placeholder="请输入您的名字">
+    </div>
+    <div>
+        <label for="mail">E-mail:</label>
+        <input type="email" id="mail" name="user_email" placeholder="请输入您的密码">
+    </div>
+    <div>
+        <label for="msg">Message:</label>
+        <textarea id="msg" rows="3" name="user_message" placeholder="请输入您的留言"></textarea>
+    </div>
+    <div class="button">
+        <button type="submit">send your message</button>
+    </div>
+</form>
+<form>
+    <fieldset>
+        <legend>Fruit juice size</legend>
+        <p>
+            <input type="radio" name="size" id="size_1" value="small">
+            <label for="size_1">Small</label>
+        </p>
+        <p>
+            <input type="radio" name="size" id="size_2" value="medium">
+            <label for="size_2">Medium</label>
+        </p>
+        <p>
+            <input type="radio" name="size" id="size_3" value="large">
+            <label for="size_3">Large</label>
+        </p>
+    </fieldset>
+</form>
+<form action="">
+    <label for="myFruit">What's your favorite fruit?</label>
+    <input type="text" name="myFruit" id="myFruit" list="mySuggestion">
+    <datalist id="mySuggestion">
+        <label for="suggestion">or pick a fruit</label>
+        <select id="suggestion" name="altFruit"></select>
+        <option value="2">Apple</option>
+        <option>Banana</option>
+        <option>Blackberry</option>
+        <option>Blueberry</option>
+        <option>Lemon</option>
+        <option>Lychee</option>
+        <option>Peach</option>
+        <option>Pear</option>
+    </datalist>
+    <input type="file" name="file" id="file" accept="image/*" multiple>
+</form>
+</body>
+</html>
